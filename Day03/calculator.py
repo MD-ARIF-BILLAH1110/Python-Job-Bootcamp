@@ -17,28 +17,30 @@ print("1. Add")
 print("2. Subtract")
 print("3. Multiply")
 print("4. Divide")
+print("5. Exit")
 
 
-choice = int(input("Choose (1-4): "))
-
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-
-if choice == 1:
-    result = add(num1, num2)
-
-elif choice == 2:
-    result = subtract(num1, num2)
-
-elif choice == 3:
-    result = multiply(num1, num2)
-
-elif choice == 4:
-    result = divide(num1, num2)
+choice = int(input("Choose (1-5): "))
+             
+if choice == 5:
+    print("Thank you for using Calculator")
 
 else:
-    result = "Invalid Choice"
-    
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
 
-print(f"Result = {result}")
+
+    if choice == 1:
+      result = add(num1, num2)
+
+    elif choice == 2:
+      result = subtract(num1, num2)
+
+    elif choice == 3:
+       result = multiply(num1, num2)
+
+    elif choice == 4:
+       result = divide(num1, num2)
+
+    print(f"Result = {result}")
 
