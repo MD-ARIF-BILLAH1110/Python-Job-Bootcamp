@@ -10,9 +10,10 @@
 
 numbers = [10, 20, 30, 40, 50, 60, 70]
 
-# result = list(map(lambda x: x * 2, numbers))  #map list er sob filer item er opor eksathe  kaj kore
-# print(result)
-
-
-result = list(filter(lambda x: x > 30, numbers))
+result = list(map(lambda x: x * 2, numbers))  #map list er sob filer item er opor eksathe  kaj kore
 print(result)
+
+
+result = list(filter(lambda x: x > 30, numbers))  #filter list er opor condition use korte lage
+print(result)
+
